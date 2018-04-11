@@ -1,0 +1,91 @@
+button
+  font-family: Whitney SSm A, sans-serif
+
+.btn__container
+  display: flex
+  justify-content: center
+  margin-top: 45px
+
+  +respond-to($xsmall)
+    margin: 4px 12px 0 12px
+
+.btn-container.btn-container--under-table
+  margin-top: 32px
+  +respond-from($large)
+    margin-top: 42px
+
+.btn__main-text
+  border-bottom: 1px solid alpha($color-green-btn, 0.3)
+  transition: .25s ease-out
+  color: $color-green-btn
+
+.btn__main-icon
+  position: relative
+  top: 5px
+  margin-left: 10px
+  transition: fill .25s ease-out
+  fill: #5656ce
+  +respond-to($xsmall)
+    display: none
+
+#btn_icon
+  fill: $color-green-btn
+  transition: .25s ease-out
+
+.btn__main
+  display: inline-block
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  color: #2020a3
+  text-transform: uppercase
+  border-radius: 5px
+  padding: 14px 24px
+  border: 1px solid alpha($color-green-btn, 0.3)
+  cursor: pointer
+  box-sizing: border-box
+  transition: .25s ease-out
+  background: $color-white
+
+  &:hover
+    background: $color-green-btn
+    color: $color-white
+    border: 1px solid $color-white
+    #btn_icon
+      fill: $color-white
+    .btn__main-text
+      border-bottom: 1px solid transparent
+      color: $color-white
+
+  +respond-to($xsmall)
+    width: 100%
+    max-width: 300px
+    display: block
+    padding: 10px 12px
+    font-size: 10px
+    text-align: center
+    margin-top: 12px
+
+.btn__container--purple
+  .btn__main-text
+    color: $color-purple-btn
+
+  #btn_icon
+    fill: $color-purple-btn
+
+  .btn__main
+    color: #29b16a
+    border: 1px solid alpha($color-purple-btn, 0.3)
+    background-color: $color-white
+
+    .btn__main-text
+      border-bottom: 1px solid alpha($color-purple-btn, 0.3)
+
+    &:hover
+      background: $color-purple-btn
+      border: 1px solid $color-white
+      color: $color-white
+      #btn_icon
+        fill: $color-white
+      .btn__main-text
+        border-bottom: 1px solid transparent

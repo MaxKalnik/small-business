@@ -1,0 +1,247 @@
+h2.section__title Methodology
+.methodology__content
+  img.methodology__img(src='images/svg/methodology-icon.svg')
+  .methodology__text
+    p.methodology__text-item
+      | RewardExpert used GIS software and data to aggregate data to the level of the Core-Based Statistical Area, as defined by the U.S. Census Bureau. Core-Based Statistical Areas correspond to metropolitan areas for our purposes. Where possible, we obtained data at this geographical scale. State-level data was used for venture capital investment deals, and for corporate tax rates and business incentives. For metropolitan areas that cross state lines, we used the data corresponding to the state in which the core city is located. E.g. New York State data was used in the case of the New York-Newark-Jersey City, NY-NJ-PA CBSA. Kauffman Index startup data was not available for all metro areas; state-level startup data was used where metro area data was not available.
+
+    p.methodology__text-item
+      | We limited our data set to the 178 metropolitan areas with populations greater than 250,000 for which office market data was available. We calculated per capita rates and other derived figures as required, and subsequently computed percentile rankings for each indicator. These rankings were combined for each of the nine categories laid out in detail below, from which we calculated a weighted average of these nine scores. The small business and startups category was weighted by a factor of 2.5, while as noted above, the taxes and incentives category was weighted by a factor of 0.5. We then ranked metropolitan areas according to this weighted average.
+
+    p.methodology__text-item
+      | In order to promote geographical diversity in our results for the bottom ten areas, multiple low ranking metropolitan areas were combined into regions. Where at least two metropolitan areas in the same state ranked in our bottom ten, they were combined, along with any other contiguous metros in the next lowest ranked ten. Statistics were aggregated to the regional level. Consequently, the bottom ten ranked regions and metros that appear in our final results include a total of 20 census-defined CBSAs.
+
+    p.methodology__text-item
+      | An overall rank was derived by averaging interest and infrastructure.
+
+.methodology__sources.methodology__sources--indicators
+  h3.methodology__sources-title
+    | Indicators & Sources:
+
+  ul.methodology__sources-list
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +office_svg
+
+      p.methodology__sources-list-text
+        | Office Space
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 1. Vacancy rate (market average)
+
+        li.methodology__sources-sublist-item
+          | 2. Office rent (market average)
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="http://www.savills-studley.com/us/office-market-reports.aspx")
+            | Savills-Studley Office Market Reports
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +demographic_svg
+
+      p.methodology__sources-list-text
+        | Office Space
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 3. Unemployment rate
+
+        li.methodology__sources-sublist-item
+          | 4. Projected population growth 2017-2022
+
+        li.methodology__sources-sublist-item
+          | 5. Diversity Index
+
+        li.methodology__sources-sublist-item
+          | 6. Housing Vacancy Rate
+
+        li.methodology__sources-sublist-item.methodology__sources-sublist-item--italic
+          | ESRI 2017 Boundaries & Demographics
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +education_svg
+
+      p.methodology__sources-list-text
+        | Education
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 7. College-educated population (percentage of workforce)
+
+        li.methodology__sources-sublist-item
+          | 8. Current Employment in Industries typically requiring education
+
+        li.methodology__sources-sublist-item
+          | 9. Current Employment in Occupations requiring college or graduate degrees
+
+        li.methodology__sources-sublist-item.methodology__sources-sublist-item--italic
+          | ESRI 2017 Boundaries & Demographics
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +income_svg
+
+      p.methodology__sources-list-text
+        | Income & Assets
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 10. Median Household Income
+
+        li.methodology__sources-sublist-item
+          | 11. Median Disposable Income
+
+        li.methodology__sources-sublist-item
+          | 12. Median Net Worth
+
+        li.methodology__sources-sublist-item
+          | 13. Median Home Value
+
+        li.methodology__sources-sublist-item
+          | 14. Projected Income Growth 2017-2022
+
+        li.methodology__sources-sublist-item.methodology__sources-sublist-item--italic
+          | ESRI 2017 Boundaries & Demographics
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +retail_svg
+
+      p.methodology__sources-list-text
+        | Retail Market
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 15. Total Retail Sales
+
+        li.methodology__sources-sublist-item
+          | 16. Average Per Business Retail Sales
+
+        li.methodology__sources-sublist-item
+          | 17. Number of Retail Businesses (Per Capita)
+
+        li.methodology__sources-sublist-item.methodology__sources-sublist-item--italic
+          | ESRI 2017 Boundaries & Demographics
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +transit_svg
+
+      p.methodology__sources-list-text
+        | Transit & Commute
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 18. Percentage of Commuters Using Transit
+
+        li.methodology__sources-sublist-item
+          | 19. Average Cost of Commuting by Car
+
+        li.methodology__sources-sublist-item
+          | 20. Cost of Public Transit
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="")
+            | Housing & Transportation Affordability Index
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +housing_svg
+
+      p.methodology__sources-list-text
+        | Housing
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 21. Average Mortgage Payment
+
+        li.methodology__sources-sublist-item
+          | 22. Average Rent
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="")
+            | Housing & Transportation Affordability Index
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +taxes_svg
+
+      p.methodology__sources-list-text
+        | Taxes (1/2 Weight)
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 23. Corporate Income Tax Rate
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="https://taxfoundation.org/state-corporate-income-tax-rates-brackets-2018/")
+            | Tax Foundation
+
+          ul.methodology__sources-ab-sublist
+            li.methodology__sources-ab-sublist-text
+              | a) Job Creation Tax Credit
+
+            li.methodology__sources-ab-sublist-text
+              | b) Investment Tax Credit
+
+            li.methodology__sources-ab-sublist-text
+              | c) Research and Development Credit
+
+            li.methodology__sources-ab-sublist-text
+              | d) Property Tax Abatement
+
+        li.methodology__sources-sublist-item
+          | 24. Tax Credits and Incentives
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="http://www.nytimes.com/interactive/2012/12/01/us/government-incentives.html")
+            | New York Times
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="http://www.upjohn.org/models/bied/database.php")
+            | Upjohn Institute Tax Incentive Database
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +venture_svg
+
+      p.methodology__sources-list-text
+        | Venture Capital
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 25. Number of Venture Capital Deals and Dollar Amount (Per capita rate, statewide)
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="https://ssti.org/sites/default/files/")
+            | State Science and Technology Institute
+
+    li.methodology__sources-list-item
+      .methodology__sources-list-icon
+        +startups_svg
+
+      p.methodology__sources-list-text
+        | Startups & Small Businesses (2.5 Weight)
+
+      ul.methodology__sources-sublist
+        li.methodology__sources-sublist-item
+          | 26. Rate of Business Ownership
+
+        li.methodology__sources-sublist-item
+          | 27. Small Business Density
+
+        li.methodology__sources-sublist-item
+          | 28. 5-Year Startup Survival Rate
+
+        li.methodology__sources-sublist-item
+          | 29. Percentage of Businesses that are Startups
+
+        li.methodology__sources-sublist-item
+          | 30. Startup Growth Rate
+
+        li.methodology__sources-sublist-item
+          a.methodology__sources-link(href="https://www.kauffman.org/kauffman-index/rankings?report=growth&indicator=growth-rate&type=metro")
+            | Housing & Transportation Affordability Index

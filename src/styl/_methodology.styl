@@ -1,0 +1,102 @@
+.methodology__content
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  margin-bottom: 45px
+
+  +respond-to($medium)
+    margin-bottom: 30px
+
+  +respond-to($xsmall)
+    flex-direction: column
+    align-items: center
+    margin-bottom: 24px
+
+.methodology__img
+  position: relative
+  margin-right: 33px
+  top: 5px
+
+  +respond-to($xsmall)
+    margin-right: 0
+    margin-bottom: 24px
+
+.methodology__text-item
+  @extend .main-text
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+
+.methodology__sources
+  margin-left: 99px
+  +respond-to($xsmall)
+    margin-left: 0
+
+  .list-icon
+    width: 16px
+    height: 16px
+    position: absolute
+    left: 0
+    top: 2px
+
+.methodology__sources-title
+  font-size: 18px
+  line-height: 26px
+  font-weight: 600
+  margin-bottom: 12px
+
+.methodology__sources-link
+  display: inline
+  border-bottom: 1px solid #cbe4f0
+  cursor: pointer
+  color: #1e92cc
+  line-height: 20px
+  font-style: italic
+  &:hover
+    border-bottom: 1px solid transparent
+
+.methodology__sources-list
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  max-height: 778px
+
+  +respond-to($medium)
+    max-height: 966px
+
+  +respond-to($small)
+    max-height: 1140px
+
+  +respond-to($xsmall)
+    max-height: 9999px
+
+.methodology__sources-list-item
+  width: 317px
+  position: relative
+  font-size: 14px
+  line-height: 26px
+  font-weight: 300
+  padding-left: 24px
+  margin-bottom: 32px
+  box-sizing: border-box
+
+  +respond-to($small)
+    width: 295px
+
+  +respond-to($xsmall)
+    width: 100%
+    margin-bottom: 24px
+    &:last-child
+      margin-bottom: 0
+
+.methodology__sources-list-text
+  font-weight: 600
+
+.methodology__sources-list-link
+  @extend .main-link
+
+.methodology__sources-sublist-item--italic
+  font-style: italic
+
+.methodology__sources-ab-sublist
+  padding-left: 24px

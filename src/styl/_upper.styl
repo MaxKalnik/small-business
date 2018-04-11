@@ -1,0 +1,150 @@
+.upper__content
+  position: relative
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.upper__pic
+  position: absolute
+  left: 15px
+  top: 64px
+
+  +respond-to($small)
+    top: 35px
+
+  +respond-to($xsmall)
+    position: static
+    display: flex
+    justify-content: center
+    margin: 0 auto 30px auto
+
+.upper__pic-img
+  width: 340px
+  height: 249px
+
+  +respond-to($small)
+    width: 275px
+    height: auto
+
+  +respond-to($xsmall)
+    width: 280px
+    height: auto
+
+.upper__text
+  margin-left: 402px
+  +respond-to($medium)
+    margin-left: 390px
+
+  +respond-to($small)
+    margin-left: 0
+
+.upper__text-under-title
+  @extend .under-title
+  +respond-to($xsmall)
+    font-size: 16px
+
+.upper__text-under-title--first
+  +respond-to($small)
+    margin-left: 320px
+
+  +respond-to($xsmall)
+    margin-left: 0
+
+.upper__text-main
+  @extend .main-text
+  margin-bottom: 24px
+
+  +respond-to($medium)
+    margin-top: 41px
+
+  +respond-to($small)
+    margin-top: 0
+
+.upper-info__list
+  margin: 16px 0
+  margin-left: 29px
+  +respond-to($xsmall)
+    margin-left: 0
+
+.upper-info__item-text
+  @extend .main-text
+
+.upper-info__item
+  position: relative
+  padding-left: 18px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 10px
+    width: 6px
+    height: 6px
+    background: url('images/svg/list-bullet.svg') center no-repeat
+    background-size: cover
+
+.upper__notes
+  display: flex
+  padding: 32px 44px
+  background-color: alpha(#c2588b, 0.05)
+  border: 1px solid alpha(#c2588b, 0.2)
+  margin-top: 32px
+
+  .list-icon
+    width: 16px
+    height: 16px
+    position: absolute
+    left: 0
+    top: 3px
+
+  &:before
+    content: ''
+    width: 74px
+    height: 46px
+    position: absolute
+    background: url('images/svg/arrows') center no-repeat
+
+  +respond-to($xsmall)
+    flex-direction: column
+    padding: 24px 12px
+
+.upper__notes-title
+  margin-bottom: 24px
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+
+  +respond-to($xsmall)
+    margin-bottom: 12px
+
+.upper__notes-analyses
+  min-width: 484px
+  margin-right: 60px
+  +respond-to($medium)
+    min-width: 304px
+    margin-right: 54px
+  +respond-to($small)
+    min-width: 240px
+  +respond-to($xsmall)
+    margin-right: 0
+    margin-bottom: 32px
+    min-width: 100%
+
+.upper__notes-analyses-list
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  max-height: 190px
+
+  +respond-to($medium)
+    max-height: 9999px
+
+.upper__notes-analyses-item
+  @extend .main-text
+  position: relative
+  padding-left: 24px
+  font-weight: 600
+  line-height: 22px
+  margin-bottom: 12px
+
+.upper__notes-business-text
+  @extend .main-text

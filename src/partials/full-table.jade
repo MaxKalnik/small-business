@@ -1,0 +1,93 @@
+include ./table-data
+include ./svg-mixins
+
+.section.section--table.section--g-table
+  .breadcrumbs__wrap
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Home
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Reports
+
+    .breadcrumbs__item
+      a.breadcrumbs__link(href='')
+        | Top States Where Cryptocurrency Is Catching On
+
+    .breadcrumbs__item
+      | Full Ranking
+
+  h2.section__title.section__title--table
+    | Full Ranking
+
+  .rankings__info.rankings__info--table
+    +info_icon
+    p.rankings__info-text
+      span.semibold Note: 
+      | We have established our ranking based upon a total of thirty indicators of small business and startup success. Metropolitan areas were ranked against each other in each, which were calculated as percentiles. Ranks reflect a weighted average of these percentiles, as detailed in our methodology section. Percentile ranks are included here for selected highly important indicators.
+
+
+  .container-group
+    .ranking-table__hint
+      .ranking-table__hint-close-btn
+      p.ranking-table__hint-text
+        | By default cities are sorted
+        br
+        | by a general rank. 
+        span.semibold
+          | You could sort by other parameter.
+
+    .ranking-table__container
+      .mobile-only
+        table.ranking-table.ranking-table--fixed
+          thead
+            tr
+              th State
+
+          tbody
+            each value in values
+              tr
+                td
+                  = value.state
+
+      .ranking-table__wrapper
+        table.ranking-table.ranking-table--data
+          thead
+            tr
+              th(class='table-sort' data-index='0') State
+              th(class='table-sort' data-index='1') Rank
+              th(class='table-sort' data-index='2') Office Rent
+              th(class='table-sort' data-index='3') Educational Attainment
+              th(class='table-sort' data-index='4') Income Growth
+              th(class='table-sort' data-index='5') Number of Businesses Per Capita
+              th(class='table-sort' data-index='6') Five-Year Startup Survival Rate
+
+          tbody
+            each value in values
+              tr
+                td
+                  = value.state
+
+                td
+                  = value.rank
+
+                td
+                  = value.officeRent
+
+                td
+                  = value.education
+
+                td
+                  = value.income
+
+                td
+                  = value.businesses
+
+                td
+                  = value.startup
+
+  .btn-container.btn-container--show-full
+    button.btn-go-back
+      span.btn-go-back-text Show the full data
+      +btn_icon

@@ -1,0 +1,50 @@
+.tips
+  width: 720px
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  color: $color-white
+
+  +respond-to($small)
+    width: 700px
+
+  +respond-to($xsmall)
+    width: 100%
+
+.tips__item
+  margin-bottom: 45px
+
+  +respond-to($small)
+    margin-bottom: 32px
+
+.tips__item-title
+  font-size: 24px
+  line-height: 32px
+  margin-bottom: 24px
+
+  +respond-to($xsmall)
+    margin-bottom: 16px
+
+.tips__item-text
+  @extend .main-text
+  color: $color-white
+
+  +respond-to($xsmall)
+    margin-bottom: 16px
+
+a.tips__item-link
+  color: $color-white
+  border-bottom-color: alpha($color-white, 0.5)
+
+.tips__ilustration
+  width: 488px
+  height: 351px
+  margin: 0 auto
+  margin-top: 52px
+
+  +respond-to($medium)
+    margin-top: 32px
+
+  +respond-to($xsmall)
+    width: 276px
+    height: 197px

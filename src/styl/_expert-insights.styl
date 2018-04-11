@@ -1,0 +1,117 @@
+.experts__item
+  &:first-child
+    padding-bottom: 45px
+    border-bottom: 1px solid #642b8c
+    margin-bottom: 45px
+
+    +respond-to($xsmall)
+      padding-bottom: 32px
+      margin-bottom: 32px
+
+.experts__under-title
+  @extend .under-title
+
+a.experts__under-title-link
+  color: #0DA4F0
+  border-bottom  1px solid rgba(30, 146, 204, 0.2)
+  cursor: pointer
+  &:hover
+    border-bottom: 1px solid transparent
+
+.experts__container
+  display: flex
+  +respond-to($small)
+    flex-direction: column
+
+.experts__author
+  margin-right: 32px
+
+  +respond-to($small)
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-right: 0
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    flex-direction: column
+    justify-content: center
+    margin-bottom: 18px
+
+.experts__author-photo
+  width: 192px
+  height: 192px
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  background-color: #ff8623
+  margin-bottom: 16px
+  +respond-to($small)
+    margin-right: 32px
+  +respond-to($xsmall)
+    margin-right: 0
+
+.experts__author-photo--purple
+  background-color: #e83180
+
+.experts__author-title
+  font-size: 22px
+  line-height: 32px
+  font-weight: 600
+  margin-bottom: 6px
+
+  +respond-to($xsmall)
+    text-align: center
+
+.experts__author-text
+  @extend .main-text
+  font-style: italic
+
+  +respond-to($small)
+    width: 192px
+
+  +respond-to($xsmall)
+    width: 100%
+
+.experts__content-text
+  @extend .main-text
+
+.experts__content-list
+  margin: 24px 0 32px 0
+
+.experts__content-list-text
+  @extend .main-text
+
+.experts__content-list-item
+  position: relative
+  padding-left: 22px
+  margin-bottom: 24px
+  &:last-child
+    margin-bottom: 0
+  &:before
+    content: ''
+    width: 12px
+    height: 12px
+    position: absolute
+    left: 0
+    top: 7px
+    background: url('images/svg/circle.svg')
+
+.experts__content-item
+  margin-bottom: 32px
+  &:last-child
+    margin-bottom: 0
+
+.expert__content-text
+  @extend .main-text
+  margin-bottom: 16px
+
+.expert__content-text--question
+  font-weight: 600
+
+
+
+
+
+

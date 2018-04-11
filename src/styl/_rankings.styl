@@ -1,0 +1,162 @@
+.rankings__intro
+  position: relative
+
+.rankings__item
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($small)
+    margin-bottom: 32px
+
+  +respond-to($xsmall)
+    display: flex
+    flex-direction: column
+    margin-bottom: 32px
+    padding-top: 80px
+    &:last-child
+      margin-bottom: 0
+
+.rankings__item-title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 200
+  margin-bottom: 16px
+  color: $color-purple-dark
+  margin-left: 83px
+
+  +respond-to($xsmall)
+    text-align: center
+    margin-left: 0
+
+.rankings__info
+  @extend .info-text
+  width: 1130px
+  color: white
+  border: 1px solid alpha($color-white, 0.3)
+  background-color: alpha(#158f5c, 0.3)
+  font-size: 16px
+  &:before
+    display: none
+
+  +respond-to($medium)
+    width: 890px
+
+  +respond-to($small)
+    position: absolute
+    bottom: 40px
+    left: 50%
+    transform: translateX(-50%)
+    width: 690px
+    padding: 16px
+    padding-left: 56px
+
+  +respond-to($xsmall)
+    width: calc(100% - 24px)
+    display: none
+
+.rankings__info-icon
+  width: 32px
+  height: 32px
+  position: absolute
+  top: 24px
+  left: 24px
+
+  +respond-to($small)
+    width: 24px
+    height: 24px
+    top: 16px
+    left: 16px
+
+  +respond-to($xsmall)
+    left: 50%
+    top: -12px
+    transform: translateX(-50%)
+
+.rankings__info--bottom
+  border: 1px solid alpha($color-white, 0.3)
+  background-color: alpha(#360049, 0.3)
+
+  #Oval-5
+    fill: #8F1651
+
+.rankings__item-content
+  display: flex
+  flex-direction: row
+
+.rankings__wrapper
+  width: 800px
+  margin: 0 auto
+
+  +respond-from($large)
+    width: 1000px
+
+  +respond-to($small)
+    width: 690px
+
+  +respond-to($xsmall)
+    width: calc(100% - 24px)
+
+.rankings__item-num-block
+  width: 67px
+  margin-right: 16px
+
+  +respond-to($xsmall)
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+    width: auto
+    margin: 0 auto 16px auto
+
+.rankings__item-num
+  font-size: 60px
+  line-height: 64px
+  font-weight: 700
+  text-align: right
+  color: $color-purple-light
+
+  +respond-from($large)
+    font-size: 64px
+    line-height: 68px
+
+.rankings__item-text
+  width: $rankings_item-table-width
+  @extend .main-text
+
+  +respond-from($large)
+    width: $rankings_item-table-width-large
+
+  +respond-to($small)
+    width: $rankings_item-table-tab-width
+
+  +respond-to($xsmall)
+    width: 100%
+    order: 3
+
+.rankings__wrapper--green
+  .rankings__item-num
+    color: $color-green-light
+
+  .rankings__item-title
+    color: $color-green-dark
+
+.rankings__item-table-text
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  color: #848586
+  text-transform: uppercase
+  margin-right: 14px
+
+  +respond-to($xsmall)
+    width: 70px
+
+.rankings__item-table-value
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  text-transform: uppercase

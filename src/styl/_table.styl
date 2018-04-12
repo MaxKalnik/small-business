@@ -23,18 +23,22 @@
   #Oval-5
     fill: #642B8C
 
-  +respond-to($small)
+  +respond-to($medium)
     position: relative
     left: 0
     top: 0
     transform: none
+
+  +respond-to($small)
     width: 690px
     padding: 16px
+    margin-top: 32px
 
   +respond-to($xsmall)
     width: calc(100% - 24px)
     display: block
     margin-bottom: 24px
+    margin-top: 22px
 
   .rankings__info-icon
     +respond-to($small)

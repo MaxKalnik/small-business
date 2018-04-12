@@ -35,21 +35,25 @@
 .rankings__info
   @extend .info-text
   width: 1130px
-  color: white
+
+  color: $color-white
   border: 1px solid alpha($color-white, 0.3)
   background-color: alpha(#158f5c, 0.3)
   font-size: 16px
   &:before
     display: none
 
+  +respond-from($large)
+    width: 1240px
+
   +respond-to($medium)
     width: 890px
-
-  +respond-to($small)
     position: absolute
     bottom: 40px
     left: 50%
     transform: translateX(-50%)
+
+  +respond-to($small)
     width: 690px
     padding: 16px
     padding-left: 56px
